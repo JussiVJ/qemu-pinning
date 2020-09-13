@@ -2528,13 +2528,13 @@ int ide_init_drive(IDEState *s, BlockBackend *blk, IDEDriveKind kind,
     } else {
         switch (kind) {
         case IDE_CD:
-            strcpy(s->drive_model_str, "QEMU DVD-ROM");
+            strcpy(s->drive_model_str, "ASUS DVD");
             break;
         case IDE_CFATA:
-            strcpy(s->drive_model_str, "QEMU MICRODRIVE");
+            strcpy(s->drive_model_str, "ASUS Drive");
             break;
         default:
-            strcpy(s->drive_model_str, "QEMU HARDDISK");
+            strcpy(s->drive_model_str, "SeaGate HARDDRIVE");
             break;
         }
     }
